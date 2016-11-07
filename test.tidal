@@ -1,0 +1,39 @@
+-- This is basically just a compilation of cool patterns you can make using TidalCycles
+
+d1 $ sound "[odx odx, sn sn sn]"
+
+d1 $ sound "sn [hh hh hh] odx"
+
+d1 $ sound "[bd bd] [bd [sn [sn sn] sn] sn]"
+
+d1 $ sound "arpy arpy arpy hh"
+
+d1 $ sound "[bd bd bd, sn cp sn cp, arpy arpy, odx]"
+
+d1 $ sound "[bd bd bd, [sn sn] cp, arpy [arpy [arpy arpy] arpy arpy], odx]"
+
+d1 $ sound "[[bd*6] [sn*3]]/2"
+
+d1 $ every 4 rev (sound "[bd bd] [bd [sn [sn sn] sn] sn]")
+
+d1 $ density 0.5  (sound "bd*2 [bd [sn sn*2 sn] sn]")
+
+d1 $ sound "bd*2 [bd [sn sn*2 sn] sn]"
+
+d1 $ every 4 (slow 4) $ sound "bd*2 [bd [sn sn*2 sn] sn]"
+
+d1 $ sound $ every 4 (density 4) "bd*2 [bd [sn sn*2 sn] sn]"
+
+d1 $ sound "bd*4" # delay "1"
+
+d1 $ pan "0 1 0.25 0.75" # sound "bd sn drum arpy"
+
+d1 $ sound "bd(5,8)"
+
+d1 $ up "0 0*2 0*4 1" # sound "[arpy, bass2, bd]"
+
+d1 $ every 2 (|+| speed "1") $ sound "arpy*4" |=| speed "1"
+
+
+
+hush

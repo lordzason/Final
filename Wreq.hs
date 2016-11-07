@@ -24,14 +24,10 @@ createURL target = (wordsAPIAddress <> target) ^. unpacked
 getSyllables :: IO (Maybe Value)
 getSyllables = do
   let opts = defaults & header "Accept" .~ ["application/json"] & header "X-Mashape-Key" .~ ["4XcFUg43ADmsh4L7DL6oOK6tGNErp1jzZeRjsn7wu8Nj8bkGIe"]
-  resp <- ((getWith opts (createURL "success/syllables")) >>= asJSON) :: IO (Response Value)
+  resp <- ((getWith opts (createURL "incredible/syllables")) >>= asJSON) :: IO (Response Value)
   return(resp ^? responseBody . key "syllables" . key "count")
 
 main :: IO ()
-{--main = do
-    (Just n) <- getSyllables
-    putStrLn "Hello World!"
-    print n--}
 main = do
     (Just n) <- getSyllables
     putStrLn "Hello World!"

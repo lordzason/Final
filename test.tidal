@@ -34,6 +34,71 @@ d1 $ up "0 0*2 0*4 1" # sound "[arpy, bass2, bd]"
 
 d1 $ every 2 (|+| speed "1") $ sound "arpy*4" |=| speed "1"
 
+d1 $ sound (translate "how many gallons")
 
+d1 $ sound "east east [east east] east"
+
+d2 $ sound "hh hh hh [hh hh] hh hh"
+
+d3 $ sound "cp [cp cp] [cp cp]"
+
+
+An old silent pond...
+A frog jumps into the pond,
+splash! Silence again.
+
+d1 $ sound "[[[east*1][east*1][east*2][east*1]] ,         [[hh*1][hh*1][hh*1][hh*2][hh*1][hh*1]] , [[arpy*1][arpy*2][arpy*2]]]]"
+
+d1 $ sound "[[east*1][east*1][east*2][east*1]] [[hh*1][hh*1][hh*1][hh*2][hh*1][hh*1]] [[cp*1][cp*2][cp*2]]]"
+
+d1 $ slow 3 $ sound "[[east*1][east*1][east*2][east*1]] [[hh*1][hh*1][hh*1][hh*2][hh*1][hh*1]] [[cp*1][cp*2][cp*2]]]"
+
+d1 $ slow 6 $ sound "[[east*1][east*1][east*2][east*1]] [[hh*1][hh*1][hh*1][hh*2][hh*1][hh*1]] [[cp*1][cp*2][cp*2]]]"
+
+
+
+d1 $ slow 6 $ sound "cc blip east hand sf dr2 gretsch"
+
+d1 $ sound "baa"
+hush
+
+-- ab arpy bass3 bend bin blip bottle cc dr drum drumtraks east f feelfx future gabba glasstap glitch gretsch hand hc hh space sf odx
+
+-- Sounds effects
+-- baa battles birds3 breath fire glasstap seawolf
+
+
+An old silent pond...
+A frog jumps into the pond,
+splash! Silence again.
+
+d1 $ slow 3 $ sound "[[sf*1][sf*1][sf*2][sf*1]] [[gretsch*1][gretsch*1][gretsch*1][gretsch*2][gretsch*1][gretsch*1]] [[cp*1][cp*2][cp*2]]]"
+
+hush
+
+
+This is too damn hard
+poetry can suck my dick
+potato butthole
+
+d1 $ slow 3 $ sound "[[[dr2*1] [dr2*1] [dr2*1] [dr2*1] [dr2*1]] [[dr2*3] [dr2*1] [dr2*1] [dr2*1] [dr2*1]] [[east*3] [east*2]]]"
+
+hush
+
+
+there u go jenny
+that was not so hard was it
+learning is fun right
+
+d1 $ slow 3 $ sound "[ [[sf*1] [sf*1] [sf*1] [sf*2]] [[cc*1] [cc*1] [cc*1] [cc*1] [cc*1] [cc*1] [cc*1]] [[sf*2] [sf*1] [sf*1] [sf*1]]]"
+
+hush
+
+
+Eat my ass ass ass
+eat my ass ass ass ass ass
+eat my ass ass ass
+
+d1 $ slow 3 $ sound "[ [[dr2*1] [dr2*1] [dr2*1] [dr2*1] [dr2*1]] [[cc*1] [cc*1] [cc*1] [cc*1] [cc*1] [cc*1] [cc*1]] [[dr2*1] [dr2*1] [dr2*1] [dr2*1] [dr2*1]] ]"
 
 hush

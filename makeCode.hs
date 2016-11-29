@@ -11,12 +11,15 @@ lineSound x
       | words == 0 = "cc"
   where words = x `mod` 7
 
+brackets :: [Char] -> [Char]
+brackets x = "[" ++ x ++ "]"
+
 wordPattern :: Int -> Int -> [Char]
-wordPattern x y = "[" ++ lineSound x ++ "*" ++ show y ++ "]"
+wordPattern x y = brackets $ lineSound x ++ "*" ++ show y
 
 fullLine :: [Int] -> [Char]
 fullLine y =
-  "[" ++ (unwords $ map (wordPattern $ length y) y) ++ "]"
+  brackets $ (unwords $ map (wordPattern $ length y) y)
 
 poem :: [[Int]] -> [Char]
-poem = undefined
+poem x = "d1 $ slow " ++ show (length x) ++ " $ sound \" " ++ (brackets $ unwords $ map fullLine x)

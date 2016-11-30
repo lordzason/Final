@@ -22,4 +22,4 @@ fullLine y =
   brackets $ (unwords $ map (wordPattern $ length y) y)
 
 poem :: [[Int]] -> [Char]
-poem x = "d1 $ slow " ++ show (length x) ++ " $ sound \" " ++ (brackets $ unwords $ map fullLine x)
+poem x = "d1 $ slow " ++ show (length x + 1) ++ " $ sound \" " ++ (brackets $ (unwords $ map fullLine x) ++ brackets "~")

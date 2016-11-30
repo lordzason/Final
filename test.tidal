@@ -34,6 +34,154 @@ d1 $ up "0 0*2 0*4 1" # sound "[arpy, bass2, bd]"
 
 d1 $ every 2 (|+| speed "1") $ sound "arpy*4" |=| speed "1"
 
+d1 $ sound (translate "how many gallons")
 
+d1 $ sound "east east [east east] east"
+
+d2 $ sound "hh hh hh [hh hh] hh hh"
+
+d3 $ sound "cp [cp cp] [cp cp]"
+
+
+An old silent pond...
+A frog jumps into the pond,
+splash! Silence again.
+
+d1 $ sound "[[[east*1][east*1][east*2][east*1]] ,         [[hh*1][hh*1][hh*1][hh*2][hh*1][hh*1]] , [[arpy*1][arpy*2][arpy*2]]]]"
+
+d1 $ sound "[[east*1][east*1][east*2][east*1]] [[hh*1][hh*1][hh*1][hh*2][hh*1][hh*1]] [[cp*1][cp*2][cp*2]]]"
+
+d1 $ slow 3 $ sound "[[east*1][east*1][east*2][east*1]] [[hh*1][hh*1][hh*1][hh*2][hh*1][hh*1]] [[cp*1][cp*2][cp*2]]]"
+
+d1 $ slow 6 $ sound "[[east*1][east*1][east*2][east*1]] [[hh*1][hh*1][hh*1][hh*2][hh*1][hh*1]] [[cp*1][cp*2][cp*2]]]"
+
+
+
+d1 $ slow 6 $ sound "cc blip east hand sf dr2 gretsch"
+
+d1 $ sound "baa"
+hush
+
+-- ab arpy bass3 bend bin blip bottle cc dr drum drumtraks east f feelfx future gabba glasstap glitch gretsch hand hc hh space sf odx
+
+-- Sounds effects
+-- baa battles birds3 breath fire glasstap seawolf
+
+
+An old silent pond...
+A frog jumps into the pond,
+splash! Silence again.
+
+d1 $ slow 3 $ sound "[[sf*1][sf*1][sf*2][sf*1]] [[gretsch*1][gretsch*1][gretsch*1][gretsch*2][gretsch*1][gretsch*1]] [[cp*1][cp*2][cp*2]]]"
+
+d1 $ slow 4 $ sound "[[sf*1][sf*1][sf*2][sf*1]] [[gretsch*1][gretsch*1][gretsch*1][gretsch*2][gretsch*1][gretsch*1]] [[cp*1][cp*2][cp*2]] [~] ]"
 
 hush
+
+-- A Saga of Struggle: three haikus by Erin's friends
+This is too damn hard
+poetry can suck my dick
+potato butthole
+
+d1 $ slow 4 $ sound "[[[dr2*1] [dr2*1] [dr2*1] [dr2*1] [dr2*1]] [[dr2*3] [dr2*1] [dr2*1] [dr2*1] [dr2*1]] [[east*3] [east*2]] [~]] "
+
+hush
+
+there u go jenny
+that was not so hard was it
+learning is fun right
+
+d1 $ slow 4 $ sound "[ [[sf*1] [sf*1] [sf*1] [sf*2]] [[cc*1] [cc*1] [cc*1] [cc*1] [cc*1] [cc*1] [cc*1]] [[sf*2] [sf*1] [sf*1] [sf*1]] [~] ]"
+
+hush
+
+Eat my ass ass ass
+eat my ass ass ass ass ass
+eat my ass ass ass
+
+d1 $ slow 4 $ sound "[ [[dr2*1] [dr2*1] [dr2*1] [dr2*1] [dr2*1]] [[cc*1] [cc*1] [cc*1] [cc*1] [cc*1] [cc*1] [cc*1]] [[dr2*1] [dr2*1] [dr2*1] [dr2*1] [dr2*1]] [~] ]"
+
+hush
+
+
+--In a Station of the Metro by Ezra Pound
+The apparition of these faces in the crowd;
+Petals on a wet, black bough.
+
+d1 $ slow 3 $ sound " [[[blip*1] [blip*4] [blip*1] [blip*1] [blip*2] [blip*1] [blip*1] [blip*1]] [[gretsch*2] [gretsch*1] [gretsch*1] [gretsch*1] [gretsch*1] [gretsch*1]][~]]"
+
+hush
+
+--Haiku by Jack Kerouac
+ The taste
+ of rain
+—Why kneel?
+
+d1 $ slow 4 $ sound " [[[east*1] [east*1]] [[east*1] [east*1]] [[east*1] [east*1]][~]]"
+
+hush
+
+--by Robert Hanley
+I envy those who need the vastness
+Of an ocean or infinity
+Of space, in order to feel small
+
+d1 $ slow 4 $ sound " [[[cc*1] [cc*2] [cc*1] [cc*1] [cc*1] [cc*1] [cc*2]] [[dr2*1] [dr2*1] [dr2*2] [dr2*1] [dr2*4]] [[cc*1] [cc*1] [cc*1] [cc*2] [cc*1] [cc*1] [cc*1]][~]]"
+
+hush
+
+
+-- by Scott Hicks
+there is no jealousy
+between
+grains of sand
+
+d1 $ slow 4 $ sound " [[[sf*1] [sf*1] [sf*1] [sf*3]] [[blip*2]] [[cp*1] [cp*1] [cp*1]][~]]"
+
+hush
+
+-- "There needs to be more emo poetry" by Magyar
+parents don't understand
+puberty is hard
+life is sufferring
+
+d1 $ slow 4 $ sound " [[[cp*2] [cp*1] [cp*3]] [[cp*3] [cp*1] [cp*1]] [[cp*1] [cp*1] [cp*3]][~]]"
+
+hush
+
+--by David Taylor Nielsen
+I love you like Godzilla
+Loved Japan: flattened buildings,
+Radioactive wreckage.
+
+d1 $ slow 4 $ sound " [[[dr2*1] [dr2*1] [dr2*1] [dr2*1] [dr2*3]] [[sf*1] [sf*2] [sf*2] [sf*2]] [[east*5] [east*2]][~]]"
+
+hush
+
+-- by Ie Mcgavock
+the art to simplicity
+is accepting
+its complexity
+
+d1 $ slow 4 $ sound " [[[sf*1] [sf*1] [sf*1] [sf*4]] [[east*1] [east*3]] [[east*1] [east*4]][~]]"
+
+hush
+
+-- The Mincing Mockingbird Guide to Troubled Birds by Kim Bagwill and Matt Adrian
+The risk I took was calulated
+but man,
+am I bad at math
+
+d1 $ slow 4 $ sound " [[[gretsch*1] [gretsch*1] [gretsch*1] [gretsch*1] [gretsch*1] [gretsch*4]] [[east*1] [east*1]] [[dr2*1] [dr2*1] [dr2*1] [dr2*1] [dr2*1]][~]]"
+
+hush
+
+-- The Mincing Mockingbird Guide to Troubled Birds by Kim Bagwill and Matt Adrian
+They might have passed
+a very pleasant evening
+had
+shit
+not gotten
+real
+
+d1 $ slow 7 $ sound " [[[sf*1] [sf*1] [sf*1] [sf*1]] [[sf*1] [sf*2] [sf*2] [sf*2]] [[blip*1]] [[blip*1]] [[east*1] [east*2]] [[blip*1]][~]]"

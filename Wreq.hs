@@ -7,6 +7,8 @@ module Project where
 
 -- X-Mashape-Key, 4XcFUg43ADmsh4L7DL6oOK6tGNErp1jzZeRjsn7wu8Nj8bkGIe, limited to 2,500 requests per day
 
+-- Many thanks to our beloved instructor, P.M., for assisting us on exception handling
+
 import Control.Exception as E
 import Control.Lens
 import Control.Monad

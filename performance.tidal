@@ -1,0 +1,18 @@
+d2 $ density 2 $ sound "bd hh"
+
+d2 silence
+
+The risk I took was calculated
+but man
+am I bad at math
+
+d1 $ slow 4 $ sound " [[[gretsch*1.0] [gretsch*1.0] [gretsch*1.0] [gretsch*1.0] [gretsch*1.0] [gretsch*4.0]] [[east*1.0] [east*2.0]]  [[dr2*2.0] [dr2*1.0] [dr2*1.0] [dr2*1.0] [dr2*1.0]] [~]]"
+
+
+d1 silence
+
+d1 $ slow 10 $ sound " [[[east*2.0] [east*1.0]][[cp*1.0] [cp*1.0] [cp*3.0]] [[blip*1.0]][[blip*1.0]][[blip*1.0]][[blip*1.0]] [[blip*1.0]] [[east*1.0] [east*1.0]][[east*1.0] [east*1.0]][~]]"
+
+hush
+
+d1 $ slow 29 $ sound " [[[gretsch*1.0] [gretsch*1.0] [gretsch*1.0] [gretsch*1.0] [gretsch*1.0] [gretsch*1.0]] [[blip*1.0] [blip*1.0] [blip*1.0] [blip*1.0] [blip*1.0] [blip*1.0] [blip*2.0] [blip*2.0]] [[cc*1.0] [cc*1.0] [cc*1.0] [cc*2.0] [cc*1.0] [cc*1.0] [cc*2.0]] [[east*1.0] [east*1.0] [east*2.0] [east*1.0] [east*1.0] [east*1.0] [east*1.0] [east*2.0] [east*1.0]] [[east*1.0] [east*1.0] [east*2.0] [east*2.0] [east*1.0] [east*1.0] [east*1.0] [east*1.0] [east*2.0]] [[blip*1.0] [blip*1.0] [blip*1.0] [blip*1.0] [blip*1.0] [blip*1.0] [blip*1.0] [blip*1.0]] [[cc*1.0] [cc*1.0] [cc*2.0] [cc*2.0] [cc*1.0] [cc*1.0] [cc*2.0]] [[cc*1.0] [cc*2.0] [cc*2.0] [cc*1.0] [cc*2.0] [cc*1.0] [cc*1.0]] [[cc*4.0] [cc*1.0] [cc*1.0] [cc*1.0] [cc*1.0] [cc*1.0] [cc*2.0]] [[cc*1.0] [cc*1.0] [cc*2.0] [cc*1.0] [cc*1.0] [cc*2.0] [cc*2.0]] [[blip*1.0] [blip*1.0] [blip*1.0] [blip*2.0] [blip*2.0] [blip*1.0] [blip*1.0] [blip*2.0]] [[east*1.0] [east*1.0] [east*1.0] [east*1.0] [east*1.0] [east*2.0] [east*1.0] [east*1.0] [east*1.0]] [[blip*2.0] [blip*1.0] [blip*4.0] [blip*2.0] [blip*1.0] [blip*1.0] [blip*1.0] [blip*2.0]] [[sf*2.0] [sf*1.0] [sf*2.0] [sf*4.0]] [[cp*2.0] [cp*1.0] [cp*1.0] [cp*2.0] [cp*1.0] [cp*1.0] [cp*1.0] [cp*1.0] [cp*1.0] [cp*2.0]] [[blip*1.0] [blip*1.0] [blip*1.0] [blip*2.0] [blip*1.0] [blip*1.0] [blip*2.0] [blip*1.0]] [[blip*1.0] [blip*1.0] [blip*2.0] [blip*1.0] [blip*1.0] [blip*1.0] [blip*2.0] [blip*1.0]] [[cc*1.0] [cc*1.0] [cc*1.0] [cc*1.0] [cc*1.0] [cc*2.0] [cc*2.0]] [[cp*1.0] [cp*1.0] [cp*1.0] [cp*1.0] [cp*1.0] [cp*1.0] [cp*1.0] [cp*1.0] [cp*1.0] [cp*1.0]] [[gretsch*1.0] [gretsch*1.0] [gretsch*1.0] [gretsch*1.0] [gretsch*1.0] [gretsch*3.0]] [[blip*1.0] [blip*3.0] [blip*1.0] [blip*1.0] [blip*1.0] [blip*1.0] [blip*1.0] [blip*1.0]] [[east*1.0] [east*2.0] [east*1.0] [east*1.0] [east*1.0] [east*1.0] [east*1.0] [east*1.0] [east*1.0]] [[east*1.0] [east*1.0] [east*1.0] [east*1.0] [east*1.0] [east*1.0] [east*1.0] [east*2.0] [east*1.0]] [[gretsch*2.0] [gretsch*2.0] [gretsch*1.0] [gretsch*2.0] [gretsch*2.0] [gretsch*1.0]] [[east*1.0] [east*2.0] [east*1.0] [east*1.0] [east*1.0] [east*1.0] [east*1.0] [east*1.0] [east*1.0]] [[gretsch*1.0] [gretsch*1.0] [gretsch*1.0] [gretsch*1.0] [gretsch*3.0] [gretsch*3.0]] [[gretsch*1.0] [gretsch*2.0] [gretsch*3.0] [gretsch*1.0] [gretsch*2.0] [gretsch*4.0]] [[east*1.0] [east*1.0] [east*1.0] [east*1.0] [east*1.0] [east*1.0] [east*1.0] [east*1.0] [east*1.0]][~]]"  # gain "0.75"

@@ -1,5 +1,10 @@
 -- This is basically just a compilation of cool patterns you can make using TidalCycles
 
+
+let thing = every 4
+
+d1 $ every 2 (slowspread revstut [2, 4, 8]) $ s "bd cp bd*2 cp"
+
 d1 $ sound "[odx odx, sn sn sn]"
 
 d1 $ sound "sn [hh hh hh] odx"
@@ -168,11 +173,14 @@ d1 $ slow 4 $ sound " [[[sf*1] [sf*1] [sf*1] [sf*4]] [[east*1] [east*3]] [[east*
 hush
 
 -- The Mincing Mockingbird Guide to Troubled Birds by Kim Bagwill and Matt Adrian
-The risk I took was calulated
-but man,
-am I bad at math
+The risk I took was calulated  -- [1,1,1,1,1,4]
+but man,                       -- [1,1]
+am I bad at math               -- [1,1,1,1,1]
 
-d1 $ slow 4 $ sound " [[[gretsch*1] [gretsch*1] [gretsch*1] [gretsch*1] [gretsch*1] [gretsch*4]] [[east*1] [east*1]] [[dr2*1] [dr2*1] [dr2*1] [dr2*1] [dr2*1]][~]]"
+d1 $ slow 4.0 $ sound " [[[gretsch*1.0] [gretsch*1.0] [gretsch*1.0] [gretsch*1.0] [gretsch*1.0] [gretsch*4.0]] [[east*1.0] [east*1.0]] [[dr2*1.0] [dr2*1.0] [dr2*1.0] [dr2*1.0] [dr2*1.0]][~]]"
+
+
+d1 $ slow 1 $ sound "[]"
 
 hush
 

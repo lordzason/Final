@@ -81,8 +81,8 @@ main = do
     if ("Fin" == input)
         then return ()
         else do
-            print (parseIntoWords input)
             result <- sequence (Prelude.map (\i -> (getSyllables i) `E.catch` handler) (parseIntoWords input))
+            print input
             print (extractSyllables result)
             main
 

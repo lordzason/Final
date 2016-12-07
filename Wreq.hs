@@ -19,7 +19,8 @@
 -- in overcoming many challenges and difficulties.
 --------------------------------------------------------------------------------
 
-module Project where 
+
+module Project where
 
 import Control.Exception as E
 import Control.Lens
@@ -44,6 +45,41 @@ import Prelude hiding (catch)
 import System.IO
 import System.IO.Error
 import Text.Regex (splitRegex, mkRegex)
+
+
+import Data.Scientific
+{--:set -XOverloadedStrings--}
+
+-- Making Code
+
+-- Choosing the sound of a line
+lineSound :: Int -> [Char]
+lineSound x
+      | words == 1 = "blip"
+      | words == 2 = "east"
+      | words == 3 = "cp"
+      | words == 4 = "sf"
+      | words == 5 = "dr2"
+      | words == 6 = "gretsch"
+      | words == 0 = "cc"
+  where words = x `mod` 7
+
+-- puts item inside []
+brackets :: [Char] -> [Char]
+brackets x = "[" ++ x ++ "]"
+
+-- Turns a single word into Tidal code
+wordPattern :: Int -> Int -> [Char]
+wordPattern x y = brackets $ lineSound x ++ "*" ++ show y
+
+-- Turns a line into Tidal code
+line :: [Int] -> [Char]
+line y =
+  brackets $ (Prelude.unwords $ Prelude.map (wordPattern $ Prelude.length y) y)
+
+-- Turns a poem into Tidal code
+poem :: [[Int]] -> [Char]
+poem x = "d1 $ slow " ++ show (Prelude.length x + 1) ++ " $ sound \" " ++ (brackets $ (Prelude.unwords $ Prelude.map line x) ++ brackets "~")
 
 -- String Constant
 wordsAPIAddress :: Text
@@ -79,8 +115,8 @@ getSyllables input = do
           | s ^. statusCode == 404 = ioError (userError ((textToString input) ++ " is not defined in Words API."))
 
 -- Gets the syllables from a list of maybe values
-extractSyllables :: [(Maybe Value)] -> [Double]
-extractSyllables r = [(toRealFloat x) | (Number x) <- (Prelude.concatMap customMaybeToList r)]
+extractSyllables :: [(Maybe Value)] -> [Int]
+extractSyllables r = [(round (toRealFloat x)) | (Number x) <- (Prelude.concatMap customMaybeToList r)]
     where
       customMaybeToList :: Maybe Value -> [Value]
       customMaybeToList Nothing = [(Number 1)]
@@ -93,10 +129,10 @@ main = do
     input <- System.IO.getLine
     if ("Fin" == input)
         then return ()
-        else do
+       else do
             result <- sequence (Prelude.map (\i -> (getSyllables i) `E.catch` handler) (parseIntoWords input))
             print input
-            print (extractSyllables result)
+            print (line (extractSyllables result))
             main
     where
         handler :: IOError -> IO (Maybe Value)

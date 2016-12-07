@@ -14,12 +14,12 @@ lineSound x
 brackets :: [Char] -> [Char]
 brackets x = "[" ++ x ++ "]"
 
-wordPattern :: Int -> Double -> [Char]
+wordPattern :: Int -> Int -> [Char]
 wordPattern x y = brackets $ lineSound x ++ "*" ++ show y
 
-line :: [Double] -> [Char]
+line :: [Int] -> [Char]
 line y =
   brackets $ (unwords $ map (wordPattern $ length y) y)
 
-poem :: [[Double]] -> [Char]
+poem :: [[Int]] -> [Char]
 poem x = "d1 $ slow " ++ show (length x + 1) ++ " $ sound \" " ++ (brackets $ (unwords $ map line x) ++ brackets "~")

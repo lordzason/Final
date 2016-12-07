@@ -1,13 +1,26 @@
 {-# LANGUAGE OverloadedStrings #-}
 
+--------------------------------------------------------------------------------
+-- CSC 395 (Fall 2017)
+--
+-- Live Music Programming: The Sound of Poetry
+--
+-- Zhi Chen and Erin Gaschott
+--
+-- References:
+-- http://codereview.stackexchange.com/questions/115066/using-wreq-and-lens-libraries-to-query-prosper-for-account-info
+-- http://stackoverflow.com/questions/38641568/extracting-a-list-of-values-from-a-list-of-maybes-without-fromjust
+--
+-- Notes:
+-- The application consumes the Words API, which can be accessed by the X-Mashape-Key, 4XcFUg43ADmsh4L7DL6oOK6tGNErp1jzZeRjsn7wu8Nj8bkGIe
+-- The application is limited to 2,500 free requests per day. Additional requests will be charged.
+--
+-- We would like to thank our beloved instructor, Peter Michael-Osera, for assisting us
+-- in overcoming many challenges and difficulties.
+--------------------------------------------------------------------------------
+
+
 module Project where
-
--- Referenced: http://codereview.stackexchange.com/questions/115066/using-wreq-and-lens-libraries-to-query-prosper-for-account-info
---- http://stackoverflow.com/questions/38641568/extracting-a-list-of-values-from-a-list-of-maybes-without-fromjust
-
--- X-Mashape-Key, 4XcFUg43ADmsh4L7DL6oOK6tGNErp1jzZeRjsn7wu8Nj8bkGIe, limited to 2,500 requests per day
-
--- Many thanks to our beloved instructor, P.M., for assisting us on exception handling
 
 import Control.Exception as E
 import Control.Lens
@@ -22,6 +35,7 @@ import Data.List.Split
 import Data.Map as Map
 import Data.Maybe
 import Data.Monoid ((<>))
+import Data.Scientific
 import Data.Text
 import Data.Text (Text)
 import Data.Text.Strict.Lens
@@ -31,6 +45,7 @@ import Prelude hiding (catch)
 import System.IO
 import System.IO.Error
 import Text.Regex (splitRegex, mkRegex)
+
 
 import Data.Scientific
 {--:set -XOverloadedStrings--}
@@ -66,7 +81,7 @@ line y =
 poem :: [[Int]] -> [Char]
 poem x = "d1 $ slow " ++ show (Prelude.length x + 1) ++ " $ sound \" " ++ (brackets $ (Prelude.unwords $ Prelude.map line x) ++ brackets "~")
 
---String Constants
+-- String Constant
 wordsAPIAddress :: Text
 wordsAPIAddress = "https://wordsapiv1.p.mashape.com/words/"
 
@@ -82,7 +97,7 @@ textToString t = t ^. unpacked
 stringToText :: String -> Text
 stringToText s = s ^. packed
 
--- Parse a string by regex into a list of words that are text
+-- Parses a string by regex into a list of texts
 parseIntoWords :: String -> [Text]
 parseIntoWords s = [(stringToText u) | u <- (splitRegex (mkRegex "[^a-zA-Z+]") s), u /= ""]
 
@@ -107,6 +122,7 @@ extractSyllables r = [(round (toRealFloat x)) | (Number x) <- (Prelude.concatMap
       customMaybeToList Nothing = [(Number 1)]
       customMaybeToList (Just x) = [x]
 
+-- Main
 main :: IO ()
 main = do
     System.IO.putStr "Please enter a line of poetry or enter 'Fin' to finish: "
@@ -118,7 +134,6 @@ main = do
             print input
             print (line (extractSyllables result))
             main
-
-
-handler :: IOError -> IO (Maybe Value)
-handler _ = return Nothing
+    where
+        handler :: IOError -> IO (Maybe Value)
+        handler _ = return Nothing

@@ -1,0 +1,11 @@
+
+
+d2 $ sound "[[bd hh], [~ blip ~]]"
+
+d1 silence
+
+d2 silence
+
+d3 silence
+
+hush

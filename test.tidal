@@ -179,12 +179,23 @@ The risk I took was calulated  -- [1,1,1,1,1,4]
 but man,                       -- [1,1]
 am I bad at math               -- [1,1,1,1,1]
 
-d1 $ slow 4.0 $ sound " [[[gretsch*1.0] [gretsch*1.0] [gretsch*1.0] [gretsch*1.0] [gretsch*1.0] [gretsch*4.0]] [[east*1.0] [east*1.0]] [[dr2*1.0] [dr2*1.0] [dr2*1.0] [dr2*1.0] [dr2*1.0]][~]]"
+d1 $ slow 4 $ every 4 (density 2) $ sound " [[[gretsch*1] [gretsch*1] [gretsch*1] [gretsch*1] [gretsch*1] [gretsch*4]] [[east*1] [east*1]] [[dr2*1] [dr2*1] [dr2*1] [dr2*1] [dr2*1]] [~]]"
 
-
+]
 d2 $ density 2 $ sound "bd hh"
 
+d3 $ slow 4 $ sound "~ ~ ~ gretsch*12" # up (run 12)
+
 hush
+
+d1 $ spread' slow "[2 3 1]/4" $ jux (iter 8) $ every 4 rev $ sound "[bd*6 [sn*3 bd*2] [bd*4 sn] [sn*6]]"
+|+| speed ((+1.0)<$> slow 1 sinewave1) |+| cutoff ((*0.5)<$> slow 2 sinewave1) |+| resonance ((*0.5)<$> slow 3 sinewave1)
+
+d1 $ smash 2 [3,2,8,1] $ stack [every 3 (0.25 <~) $ every 4 rev $ every 2 (0.25 <~) $ striate 128 $ sound "[breaks125]" |+| speed "0.7", every 2 rev $ every 5 (0.25 <~) $ every 3 rev $ every 2 (0.25 <~) $ sound "[[sytrus1/3]*16 [~ sytrus1/3]*24 [sytrus1/3 ~]*8 [sytrus1/3]*32]" |+| shape "-0.3" |+| cutoff "0.1" |+| resonance "0.1" |+| speed "[[1.0 0.8] [1.0 1.5 0.8] [0.5] [0.8 1.2]]"]
+
+
+
+
 
 -- The Mincing Mockingbird Guide to Troubled Birds by Kim Bagwill and Matt Adrian
 They might have passed

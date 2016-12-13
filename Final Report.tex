@@ -1,0 +1,90 @@
+%-----------------------------------------------------------------------------
+%
+%               Template for sigplanconf LaTeX Class
+%
+% Name:         sigplanconf-template.tex
+%
+% Purpose:      A template for sigplanconf.cls, which is a LaTeX 2e class
+%               file for SIGPLAN conference proceedings.
+%
+% Guide:        Refer to "Author's Guide to the ACM SIGPLAN Class,"
+%               sigplanconf-guide.pdf
+%
+% Author:    Paul C. Anagnostopoulos
+%               Windfall Software
+%               978 371-2316
+%               paul@windfall.com
+%
+% Created:      15 February 2005
+%
+%-----------------------------------------------------------------------------
+
+\documentclass[preprint]{sigplanconf}
+
+% The following \documentclass options may be useful:
+
+% preprint     Remove this option only once the paper is in final form.
+% 10pt          To set in 10-point type instead of 9-point.
+% 11pt          To set in 11-point type instead of 9-point.
+% numbers    To obtain numeric citation style instead of author/year.
+
+\usepackage{amsmath}
+
+\newcommand{\cL}{{\cal L}}
+
+\begin{document}
+
+\special{papersize=8.5in,11in}
+\setlength{\pdfpageheight}{\paperheight}
+\setlength{\pdfpagewidth}{\paperwidth}
+
+\titlebanner{Computer Science 395: Modern Programming} 
+
+\title{Musical Programming}
+\subtitle{Live Textual Performance}
+
+\authorinfo{Zhi Chen}
+           {Grinnell College '17}
+           {chenzhi17@grinnell.edu}
+\authorinfo{Erin Gaschott}
+           {Grinnell College '17}
+           {gaschott17@grinnell.edu}
+
+\maketitle
+
+\section{Introduction}
+
+Introducing the problem that the project is trying to solve.\\
+
+There is an emerging live performance musical coding scene in functional programming circles. They are are doing lots of work on creating user-friendly interfaces for interacting with this medium. As liberal arts students, we think the combonation of music and coding is a great pursit, but as Grinnellians, we wish to take this to its next step and add a textual component to further push the limits of the genre.
+
+\section{Prior Work}
+
+Describes prior approaches towards solving this problem.\\
+
+There are currently a variety of products, services, and communities engaging withe field of live music from code. The online community, TopLap, explores and promotes live coding and offers resources and guidances to the public. Academic organizations include the International Conference on Live Coding that examines the role of live coding in generating new research potential. There are numerous music packages in Haskell, but two packages of are particular notice. First, Vivid, is a package for music and sound synthesis using SuperCollider, a MIDI interface. Second, Midair, is a package for livecoding that allows users to exchange parts or the whole of a Functional Reactive Programming graph while the graph is running. The most full featured domain-specific languages include Euterpea, for live computer music development mainly for academic use, and TidalCycles, a language for live coding embedded in Haskell specifically designed for performance.
+
+\section{Examples}
+
+Demonstrating the salient features of your project through examples.  Use pictures and graphs whenever appropriate.\\
+
+\section{Program Implementation}
+
+Describes the architecture of your system in more detail.  You should give a complete account of your system (e.g., if you built a language, you should describe the full language).  You should also highlight major features of the implementation, e.g., what machine learning algorithms you used (if applicable), as well as libraries that you used.
+
+\section{Reflection}
+
+Describes the pros and cons of the programming language, tools, and libraries, that you used to build your project.  What aspects of Haskell, Elm, etc. were more productive or more enjoyable to use?  What did you find particularly troublesome or burdensome to do with these languages?\\
+
+\section{References}
+
+TidalCycles. Available at http://tidalcycles.org/. \\
+
+Words API. Available at https://www.wordsapi.com/.\\
+
+Wreq package. Available at https://hackage.haskell.org/package/wreq.\\
+
+\acks
+We thank Peter Michael-Osera, Grinnell College, for his support and encouragement. We would also like to thank the students of the Computer Science Department at Grinnell College for providing us with examples of poetry.
+
+\end{document}

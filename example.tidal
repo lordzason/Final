@@ -1,0 +1,7 @@
+-- Example seen in the write-up
+
+d1 $ slow 4 $ sound " [[[sf*1] [sf*1] [sf*1] [sf*3]] [[blip*2]] [[cp*1] [cp*1] [cp*1]][~]]"
+
+d2 $ density 2 $ sound "bd hh"
+
+hush

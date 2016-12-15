@@ -19,10 +19,10 @@ Zhi Chen and Erin Gaschott
   2. In Atom, go to Packages->TidayCycles->Boot TidalCycles
   
   3. In a terminal, compile and run the Haskell file, Main.hs, with
-    ghci Main.hs
+    "ghci Main.hs"
     
   4. Run main with
-    main
+    "main"
     
   5. Follow the prompt and do not execeed the limited free requests
   
